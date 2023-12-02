@@ -231,4 +231,12 @@ body {
   .share {
     @include adaptive-value('padding-top', 27, 15, 1);
   }
+
+  .share_title {
+    color: $black_25;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+  }
 }
