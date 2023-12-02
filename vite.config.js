@@ -10,7 +10,7 @@ htmlFiles.forEach((file) => {
 });
 
 export default defineConfig({
-  base: '/svato',
+  base: '/-UNION-OF-ATO-VETERANS',
   root: 'src',
   publicDir: '../public',
   plugins: [
@@ -24,3 +24,4 @@ export default defineConfig({
     emptyOutDir: true,
   },
 });
+
