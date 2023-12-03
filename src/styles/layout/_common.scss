@@ -358,13 +358,14 @@ main {
     }
   }
 
-  .date {
+  .article_date {
     color: $black_25;
     font-family: 'Oswald';
     @include adaptive-value('font-size', 24, 20, 1);
     font-weight: 600;
     line-height: 120%;
     text-transform: uppercase;
+    margin-bottom: 14px;
   }
 
   .article_wrap {
@@ -634,11 +635,11 @@ main {
     @include adaptive-value('font-size', 20, 14, 1);
     font-weight: 600;
     @include adaptive-value('margin-bottom', 80, 40, 1);
-    border: 1px solid $orange;
+    border: 2px solid $orange;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background-color: $white;
+      background-color: $gray_E2;
       color: $orange;
       transition: all 0.3s ease 0s;
     }
@@ -653,9 +654,28 @@ main {
     right: 0;
     bottom: 0;
   }
-  
+
   .help_link {
     color: $orange;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      transition: all 0.3s ease 0s;
+      background-color: $orange;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
   }
 }
 
