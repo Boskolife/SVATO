@@ -14,8 +14,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @include adaptive-value('padding-top', 20, 10, 1);
-    @include adaptive-value('padding-bottom', 20, 10, 1);
+    padding: 20px 0;
+
+    @include media('<tablet'){
+      padding: 16px 0;
+    }
   }
 
   .logo {

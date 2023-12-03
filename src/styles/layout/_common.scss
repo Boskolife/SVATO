@@ -41,6 +41,22 @@ main {
 .main_section {
   position: relative;
   height: 100dvh;
+  overflow: hidden;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    background-color: $gray;
+    z-index: 4;
+
+    @include media('<tablet'){
+      top: 91px;
+    }
+  }
 
   @include media('<tablet') {
     height: 100%;
