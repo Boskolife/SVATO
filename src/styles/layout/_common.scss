@@ -43,7 +43,7 @@ main {
   height: 100dvh;
   overflow: hidden;
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 98px;
@@ -53,7 +53,7 @@ main {
     background-color: $gray;
     z-index: 4;
 
-    @include media('<tablet'){
+    @include media('<tablet') {
       top: 91px;
     }
   }
@@ -634,18 +634,26 @@ main {
     @include adaptive-value('font-size', 20, 14, 1);
     font-weight: 600;
     @include adaptive-value('margin-bottom', 80, 40, 1);
-    border:1px solid $orange;
-    transition: all .3s ease 0s;
+    border: 1px solid $orange;
+    transition: all 0.3s ease 0s;
 
-    &:hover{
+    &:hover {
       background-color: $white;
       color: $orange;
-      transition: all .3s ease 0s;
+      transition: all 0.3s ease 0s;
     }
   }
 }
 
 .help_text {
+  position: relative;
+
+  .humans {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  
   .help_link {
     color: $orange;
   }
