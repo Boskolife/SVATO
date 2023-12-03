@@ -386,6 +386,7 @@ main {
   .article_img_wrap {
     max-width: 265px;
     max-height: 180px;
+    min-height: 180px;
     position: relative;
 
     img {
@@ -758,4 +759,10 @@ main {
       height: 100%;
     }
   }
+}
+
+.wp-block-archives-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
 }
