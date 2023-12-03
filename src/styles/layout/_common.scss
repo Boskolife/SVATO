@@ -180,7 +180,7 @@ main {
   }
 
   .links_block {
-    width: 40%;
+    width: 32%;
 
     @include media('<desktop') {
       width: 100%;
@@ -266,9 +266,11 @@ main {
     flex-direction: column;
     min-height: 100%;
     border-left: 1px solid $gray;
+    width: 68%;
 
     @include media('<desktop') {
       border-left: none;
+      width: 100%;
     }
   }
 
@@ -382,8 +384,8 @@ main {
   }
 
   .article_img_wrap {
-    min-width: 265px;
-    height: 100%;
+    max-width: 265px;
+    max-height: 180px;
     position: relative;
 
     img {
@@ -425,6 +427,8 @@ main {
     font-weight: 400;
     line-height: 160%;
     margin-bottom: 12px;
+    max-width:550px;
+    width: 100%;
   }
 
   .article_link {
@@ -581,7 +585,7 @@ main {
     @include adaptive-value('padding-bottom', 40, 20, 1);
   }
 
-  .subtitle {
+  h2 {
     color: $black_25;
     font-family: 'Roboto';
     font-size: 24px;
@@ -590,7 +594,7 @@ main {
     margin-bottom: 12px;
   }
 
-  .article_text {
+  p {
     color: $gray;
     font-size: 16px;
     font-weight: 400;

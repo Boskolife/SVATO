@@ -6,7 +6,7 @@ export const pagination = function () {
     return;
   }
 
-  const itemsPerPage: number = 3; // Количество элементов на одной странице
+  const itemsPerPage: number = 9; // Количество элементов на одной странице
   const articles: NodeListOf<Element> = document.querySelectorAll('.article');
 
   let currentPage: number = 1;
@@ -63,7 +63,7 @@ export const pagination = function () {
 
     // Создаем изображение стрелки "Назад"
     const prevButton: HTMLImageElement = document.createElement('img');
-    prevButton.src = './images/prev.svg'; // Замените на путь к изображению стрелки "Назад"
+    prevButton.src = '../wp-content/themes/svato//images/prev.svg'; // Замените на путь к изображению стрелки "Назад"
     prevButton.alt = 'Назад';
     prevButton.classList.add('arrow_page');
     prevButton.addEventListener('click', () => {
@@ -109,7 +109,7 @@ export const pagination = function () {
 
     // Создаем изображение стрелки "Вперед"
     const nextButton: HTMLImageElement = document.createElement('img');
-    nextButton.src = './images/next.svg'; // Замените на путь к изображению стрелки "Вперед"
+    nextButton.src = '../wp-content/themes/svato/images/next.svg'; // Замените на путь к изображению стрелки "Вперед"
     nextButton.alt = 'Вперед';
     nextButton.classList.add('arrow_page');
     nextButton.addEventListener('click', () => {
