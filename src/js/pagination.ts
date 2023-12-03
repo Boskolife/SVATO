@@ -38,7 +38,7 @@ export const pagination = function () {
     const pageCount: number = Math.ceil(items.length / perPage);
 
     // Определяем, сколько страниц отображать одновременно
-    const maxVisibleButtons: number = 4; // Измените это значение по вашему желанию
+    const maxVisibleButtons: number = 3; // Измените это значение по вашему желанию
 
     let startPage: number;
     let endPage: number;
@@ -65,6 +65,7 @@ export const pagination = function () {
     const prevButton: HTMLImageElement = document.createElement('img');
     prevButton.src = './images/prev.svg'; // Замените на путь к изображению стрелки "Назад"
     prevButton.alt = 'Назад';
+    prevButton.classList.add('arrow_page');
     prevButton.addEventListener('click', () => {
       if (currentPage > 1) {
         currentPage--;
@@ -110,6 +111,7 @@ export const pagination = function () {
     const nextButton: HTMLImageElement = document.createElement('img');
     nextButton.src = './images/next.svg'; // Замените на путь к изображению стрелки "Вперед"
     nextButton.alt = 'Вперед';
+    nextButton.classList.add('arrow_page');
     nextButton.addEventListener('click', () => {
       const pageCount: number = Math.ceil(items.length / perPage);
       if (currentPage < pageCount) {
