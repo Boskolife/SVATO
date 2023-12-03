@@ -3,7 +3,7 @@ export const pagination = function () {
   const pagination = document.getElementById('pagination');
 
   if (!pagination) {
-    throw new Error('Element not found');
+    return;
   }
 
   const itemsPerPage: number = 3; // Количество элементов на одной странице

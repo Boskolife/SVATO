@@ -45,6 +45,12 @@
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.32px;
+    transition: all 0.3s ease 0s;
+    
+    &:hover {
+      color: $orange;
+      transition: all 0.3s ease 0s;
+    }
 
     &:not(:last-child) {
       margin-bottom: 20px;
