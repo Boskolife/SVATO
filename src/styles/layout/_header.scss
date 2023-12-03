@@ -22,7 +22,7 @@
     width: 44px;
     height: 58px;
 
-    @include media('<400px'){
+    @include media('<tablet') {
       position: relative;
       z-index: 6;
     }
@@ -32,18 +32,31 @@
     @include media('<tablet') {
       position: fixed;
       top: 0;
-      right: -100%;
+      right: -300%;
       transition: all 0.5s ease;
       height: 100vh;
     }
   }
 
+  .burger_img {
+    display: none;
+
+    @include media('<tablet') {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
   .menu_active {
+    top: 0;
     right: 0;
     transition: all 0.5s ease;
     background-color: $gray_E2;
     z-index: 5;
-    padding: 0 30px;
+    padding: 100px 0 30px 0;
   }
 
   .navContainer_active {
@@ -65,8 +78,30 @@
     @include media('<tablet') {
       height: 100%;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       text-align: center;
+      row-gap: 0;
+      overflow: auto;
+    }
+  }
+
+  .menu_item {
+    @include media('<tablet') {
+      padding: 16px;
+      border-top: 1px solid rgb(0, 0, 0, 0.2);
+      width: 100%;
+
+      &:last-child {
+        border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .main_link {
+    display: none;
+
+    @include media('<tablet') {
+      display: block;
     }
   }
 
@@ -78,11 +113,109 @@
     text-transform: uppercase;
   }
 
+  .dropdown {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -38px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+
+      @include media('<tablet') {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .dropdown_content {
+        transform: rotateX(0deg);
+        transition: all 0.5s ease 0s;
+      }
+
+      .dropdown_arrow {
+        transform: rotateX(180deg);
+        transition: all 0.5s ease 0s;
+      }
+    }
+  }
+
+  .dropdown_arrow {
+    fill: $white;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 2px;
+
+    @include media('<tablet') {
+      fill: $gray;
+    }
+  }
+
+  .dropdown_btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+
+    @include media('<tablet') {
+      border-top: 1px solid rgb(0, 0, 0, 0.2);
+      padding: 16px;
+      justify-content: center;
+    }
+  }
+
+  .clicked {
+    .dropdown_arrow {
+      transform: rotateX(180deg);
+      transition: all 0.5s ease 0s;
+    }
+  }
+
+  .dropdown_content {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    transition: all 0.5s ease 0s;
+    gap: 16px;
+    background-color: $gray_E2;
+    padding: 20px;
+    border: 1px solid #aeb0aa;
+    top: 60px;
+
+    @include media('<tablet') {
+      transform: rotateX(0deg);
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
+      position: static;
+      align-items: center;
+      top: 0;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  .dropdown_content_active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 16px 16px 16px;
+  }
+
   .burger_menu {
     display: none;
     position: relative;
-    width: 30px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     z-index: 6;
 
     &::before {
@@ -124,12 +257,12 @@
 
   .burger_active {
     &::after {
-      bottom: 9px;
+      bottom: 11px;
       transform: rotate(45deg);
     }
 
     &::before {
-      top: 9px;
+      top: 11px;
       transform: rotate(-45deg);
     }
 
@@ -148,6 +281,10 @@
 
   .menu_link_active {
     color: $orange;
+  }
+
+  .dropdown_arrow {
+    fill: $gray;
   }
 }
 
@@ -174,5 +311,10 @@
     .menu_link {
       color: $black;
     }
+  }
+
+  .dropdown_content {
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(50px);
   }
 }

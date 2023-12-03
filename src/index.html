@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>СПІЛКА ВЕТЕРАНІВ АТО</title>
     <link rel="stylesheet" href="/styles/main.scss" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700"
       rel="stylesheet"
@@ -18,31 +23,543 @@
   </head>
 
   <body>
-    {{> header_white }}
-    <main>
-      <section class="main_section">
-        <img
-          class="main_bg"
-          src="./images/main/main_img.webp"
-          alt="main background"
-        />
-        <div class="container">
-          <div class="content">
-            <div class="main_logo">
-              <img src="./images/main/main_logo.webp" alt="main logo" />
-            </div>
-            <div class="main_text">
-              <h1 class="main_title">
-                ХАРКІВСЬКА ОБЛАСНА ГРОМАДСЬКА ОРгаНІЗАЦІЯ «СПІЛКА ВЕТЕРАНІВ АТО»
-              </h1>
-              <div class="since">
-                <span class="since_title">заснована у 2015 р.</span>
+    <div id="wrapper">
+      {{> header_white }}
+      <main>
+        <section class="main_section">
+          <img
+            class="main_bg"
+            src="./images/main/main_img.webp"
+            alt="main background"
+          />
+          <div class="container">
+            <div class="content">
+              <div class="main_logo">
+                <img src="./images/main/main_logo.webp" alt="main logo" />
+              </div>
+              <div class="main_text">
+                <h1 class="main_title">
+                  ХАРКІВСЬКА ОБЛАСНА ГРОМАДСЬКА ОРгаНІЗАЦІЯ «СПІЛКА ВЕТЕРАНІВ
+                  АТО»
+                </h1>
+                <div class="since">
+                  <span class="since_title">заснована у 2015 р.</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    {{> footer }}
+        </section>
+        <section class="content_section">
+          <div class="content">
+            <div class="links_block">
+              <div class="socials_block">
+                <h2 class="links_title">Ми в соцмережах</h2>
+                <div class="socail_wrap">
+                  <a target="_blank" href="https://www.facebook.com/svato.kh.ua" class="socail">
+                    <img
+                      class="socail_img"
+                      src="./images/facebook.svg"
+                      alt="facebook"
+                    />
+                    <span class="socail_name">Facebook</span>
+                  </a>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCE98NjGD2UZLTNAGlWphy_A" class="socail">
+                    <img
+                      class="socail_img"
+                      src="./images/youtube.svg"
+                      alt="youtube"
+                    />
+                    <span class="socail_name">Youtube</span>
+                  </a>
+                </div>
+              </div>
+              <div class="partners_block">
+                <h2 class="links_title">НАШІ ПАРТНЕРИ та КОРИСНІ ПОСИЛАННЯ</h2>
+                <div class="partners_wrap">
+                  <a target="_blank" href="https://dopomoga-ato.com.ua/" class="partners_link"
+                    >благодійний фонд “допомога ветеранам ато”</a
+                  >
+                  <a target="_blank" href="https://www.dcz.gov.ua/kha/control/uk/publish/article?art_id=54114&cat_id=4119126" class="partners_link"
+                    >Державний центр зайнятості</a
+                  >
+                  <a target="_blank" href="https://www.rada.gov.ua/" class="partners_link">Верховна Рада України</a>
+                  <a target="_blank" href="https://www.kmu.gov.ua/" class="partners_link">урядовий портал</a>
+                  <a target="_blank" href="#" class="partners_link"
+                    >Міністерство оборони України</a
+                  >
+                  <a target="_blank" href="http://www.mvs.gov.ua/" class="partners_link"
+                    >Міністерство внутрішніх справ України</a
+                  >
+                  <a target="_blank" href="https://www.president.gov.ua/" class="partners_link"
+                    >Президент України Офіційне інтернет-представництво</a
+                  >
+                  <a target="_blank" href="https://kharkivoda.gov.ua/" class="partners_link"
+                    >Харківска Обласна Віскова Адміністрація</a
+                  >
+                  <a target="_blank" href="http://dsvv.gov.ua/" class="partners_link">державна служба україни</a>
+                </div>
+              </div>
+              <div class="archives">
+                <h2 class="links_title">АРХІВИ НОВИН ТА ПОДІЙ</h2>
+                <div class="archives_wrap">
+                  <div class="dropdown">
+                    <button class="archives_dropdown_btn">
+                      2023
+                      <svg class="dropdown_arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 13.0078L16.0312 5.97659L15.0328 4.97815L12.6281 7.3969L9 11.025L5.37188 7.3969L2.96719 4.99221L1.96875 5.99065L9 13.0078Z"
+                        />
+                      </svg>
+                    </button>
+                    <div class="dropdown_content_archives">
+                      <a class="archives_link" href="#">Січень</a>
+                      <a class="archives_link" href="#">Лютий</a>
+                      <a class="archives_link" href="#">Березень</a>
+                      <a class="archives_link" href="#">Квітень</a>
+                      <a class="archives_link" href="#">Травень</a>
+                      <a class="archives_link" href="#">Червень</a>
+                      <a class="archives_link" href="#">Липень</a>
+                      <a class="archives_link" href="#">Серпень</a>
+                      <a class="archives_link" href="#">Вересень</a>
+                      <a class="archives_link" href="#">Жовтень</a>
+                      <a class="archives_link" href="#">Листопад</a>
+                      <a class="archives_link" href="#">Грудень</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="archives_dropdown_btn">
+                      2022
+                      <svg class="dropdown_arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                      >
+                        <path
+                          d="M9 13.0078L16.0312 5.97659L15.0328 4.97815L12.6281 7.3969L9 11.025L5.37188 7.3969L2.96719 4.99221L1.96875 5.99065L9 13.0078Z"
+                        />
+                      </svg>
+                    </button>
+                    <div class="dropdown_content_archives">
+                      <a class="archives_link" href="#">Січень</a>
+                      <a class="archives_link" href="#">Лютий</a>
+                      <a class="archives_link" href="#">Березень</a>
+                      <a class="archives_link" href="#">Квітень</a>
+                      <a class="archives_link" href="#">Травень</a>
+                      <a class="archives_link" href="#">Червень</a>
+                      <a class="archives_link" href="#">Липень</a>
+                      <a class="archives_link" href="#">Серпень</a>
+                      <a class="archives_link" href="#">Вересень</a>
+                      <a class="archives_link" href="#">Жовтень</a>
+                      <a class="archives_link" href="#">Листопад</a>
+                      <a class="archives_link" href="#">Грудень</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="articles_block">
+              <div id="article_content" class="article_wrap">
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="article">
+                  <span class="date">22.11</span>
+                  <div class="article_content">
+                    <div class="article_img_wrap">
+                      <img src="./images/test_article.png" alt="article image" />
+                    </div>
+                    <div class="article_text">
+                      <h3 class="title">
+                        Онлайн-семінар “Безвісти зниклі військовослужбовці та
+                        полонені”
+                      </h3>
+                      <p class="text">
+                        Запрошуємо на юридичний онлайн-семінар “Безвісти зниклі
+                        військовослужбовці та полонені”, який відбудеться у
+                        суботу, 25 листопада 2023 року з 13.00 до 14.00 на
+                        платформі...
+                      </p>
+                      <a href="#" class="article_link"
+                        >читати далі
+                        <img src="./images/article_arrow.svg" alt="arrow"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="pagination" class="pagination">
+                <span id="current-page-text">1</span>
+              </div>
+            </div>
+          </div>
+        </section> 
+      </main>
+      {{> footer }}
+    </div>
   </body>
 </html>

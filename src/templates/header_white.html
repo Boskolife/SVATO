@@ -3,16 +3,50 @@
     <div class="header_content">
       <div class="logo">
         <a href="index.html">
-            <img src="./images/logo.webp" alt="logo" />
+          <img src="./images/logo.webp" alt="logo" />
         </a>
       </div>
       <div class="nav_container"></div>
       <nav class="menu">
         <ul class="menu_list" id="menu">
-          <li class="menu_item"><a class="menu_link" href="about_us.html">про нас</a></li>
-          <li class="menu_item"><a class="menu_link" href="#">отримати консультацію та допомогу</a></li>
-          <li class="menu_item"><a class="menu_link" href="#">контакти</a></li>
+          <li class="menu_item main_link">
+            <a class="menu_link" href="index.html">головна</a>
+          </li>
+          <li class="menu_item">
+            <a class="menu_link" href="about_us.html">про нас</a>
+          </li>
+          <div class="dropdown">
+            <button class="menu_link menu_item dropdown_btn">
+              отримати консультацію та допомогу
+              <svg class="dropdown_arrow"
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 13.508L16.0312 6.47671L15.0328 5.47827L12.6281 7.89702L9 11.5251L5.37188 7.89702L2.96719 5.49233L1.96875 6.49077L9 13.508Z"
+                />
+              </svg>
+            </button>
+            <div class="dropdown_content">
+              <a class="menu_link" href="help_1.html">Психологічна допомога ветеранам та членам їх родин</a>
+              <a class="menu_link" href="help_2.html">Юридичні консультації</a>
+              <a class="menu_link" href="help_3.html">Консультації з питань соціальної сфери, оформлення пільг</a>
+              <a class="menu_link" href="help_4.html">Консультації у сфері медичної допомоги та лікування</a>
+              <a class="menu_link" href="help_5.html">Програми з фізичної реабілітації після поранень та ампутацій</a>
+              <a class="menu_link" href="help_6.html">Допомога у працевлаштуванні, консультації щодо відкриття ветеранського бізнесу</a>
+              <a class="menu_link" href="help_7.html">Онлайн-лекторій «Державна політика щодо підтримки та захисту ветеранів в Україні та за кордоном».</a>
+            </div>
+          </div>
+          <li class="menu_item"><a class="menu_link" href="contact.html">контакти</a></li>
         </ul>
+        <img
+          class="burger_img"
+          src="./images/burger_img.svg"
+          alt="burger image"
+        />
       </nav>
       <div class="burger_menu">
         <span></span>
